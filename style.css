@@ -1,0 +1,250 @@
+html {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.05em;
+}
+
+body {
+    background-color: #fcfbfb;
+    padding: 0;
+    margin: 0;
+}
+
+#f-img {
+    background-image: url(/jess-bailey-UHqfUTDmdC4-unsplash.jpg);
+    background-size: cover;
+}
+
+.hover:hover {
+    transform: translateY(-10px);
+    background-color: white;
+}
+
+.box {
+    width: 38em;
+    height: 18em;
+    border-radius: 50px;
+    box-shadow: rgba(128, 128, 128, 0.418) 10px 10px 30px;
+    background-color: #ffffffb4;
+    padding: 1.5em;
+    margin: 0.5em 1em;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+#welcome {
+    width: 100%;
+    max-width: 25em;
+    margin: 0.5em 30em;
+    padding: 0.8em;
+    height: max-content;
+    min-width: max-content;
+    order: 2;
+}
+
+#welcome h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#me {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: -1500px;
+}
+
+#me h2 {
+    text-align: center;
+    padding-bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 0.08em solid rgba(128, 128, 128, 0.253);
+}
+
+#photo {
+    display: block;
+    width: 17em;
+    text-align: center;
+    width: 100%;
+    order: 1;
+    margin: 0.5em;
+}
+
+#photo img {
+    width: 16em;
+    border-radius: 100%;
+    box-shadow: rgba(128, 128, 128, 0.678) 10px 10px 20px;
+    transition: transform 0.5s;
+}
+
+#skills {
+    order: 3;
+}
+
+#aboutme {
+    order: 4;
+}
+
+#contacts {
+    height: max-content;
+    order: 5;
+    width: 25em;
+}
+
+.pj-width {
+    width: 24em;
+    height: 15em;
+}
+
+#s-img {
+    background-image: url(magicpattern-am-yg8wLLIo-unsplash.jpg);
+}
+
+#projects {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.pj-box {
+    box-shadow: rgba(128, 128, 128, 0.418) 10px 10px 30px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.692);
+    height: max-content;
+    padding: 0.5em;
+    transition: transform 0.5s, background-color 0.5s;
+    letter-spacing: 0.1em;
+    margin: 1em;
+}
+
+#projects h3 {
+    padding: 0.5em;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+}
+
+#pj-1 {
+    background-image: url(/tim-mossholder-v5re1loi264-unsplash.jpg);
+    background-size: cover;
+    min-height: 15em;
+}
+
+#pj-2 {
+    background-image: url(/tim-mossholder-v5re1loi264-unsplash.jpg);
+    background-size: cover;
+    min-height: 15em;
+}
+
+#pj-3 {
+    background-image: url(/tim-mossholder-v5re1loi264-unsplash.jpg);
+    background-size: cover;
+    min-height: 15em;
+}
+
+#pj-4 {
+    background-image: url(/tim-mossholder-v5re1loi264-unsplash.jpg);
+    background-size: cover;
+    min-height: 15em;
+}
+
+#pj-5 {
+    background-image: url(/tim-mossholder-v5re1loi264-unsplash.jpg);
+    background-size: cover;
+    min-height: 15em;
+}
+
+#pj-6 {
+    background-image: url(/tim-mossholder-v5re1loi264-unsplash.jpg);
+    background-size: cover;
+    min-height: 15em;
+}
+
+@media (max-width: 1982px) {
+    #photo {
+        order: 1;
+        width: 100%;
+    }
+
+    #aboutme {
+        order: 3;
+    }
+
+    #skills {
+        order: 2;
+    }
+
+    #contacts {
+        order: 4;
+    }
+}
+
+@media (max-width: 1861px) {
+    #projects {
+        justify-content: space-around;
+        height: auto;
+    }
+}
+
+@media (max-width: 1681px) {
+    #photo {
+        order: 1;
+        width: 100%;
+    }
+
+    #aboutme {
+        order: 3;
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+    #skills {
+        order: 2;
+    }
+
+    #contacts {
+        order: 4;
+    }
+    #me {
+        height: auto;
+    }
+
+    .box {
+        height: max-content;
+    }
+}
+
+@media (max-width: 1200px) {
+    #aboutme {
+        margin: 0.5em 1em;
+    }
+}
+
+@media (max-width: 533px) {
+    #f-img {
+        min-width: 533px;
+    }
+
+    #s-img {
+        min-width: 533px;
+    }
+
+    .pj-width {
+        width: 400px;
+    }
+}
